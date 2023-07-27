@@ -1,0 +1,12 @@
+# Common Compilers:\n
+
+The process to compile a C program differs between compilers and operating systems.\n
+Most operating systems ship without a compiler, so you will have to install one.\n
+
+## Some common compilers choices are:
+• GCC, the GNU Compiler Collection\n
+• clang: a C language family front-end for LLVM\n
+• MSVC, Microsoft Visual C/C++ build tools\n
+
+### Further Reading:\n
+https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
