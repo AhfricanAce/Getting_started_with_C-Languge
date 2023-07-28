@@ -1,0 +1,23 @@
+Explanation of printf("a+b = %d \n",c);
+This is a code line in C programming language.
+
+printf(): In C programming language, the printf() function is used to print formatted output to the console.
+i.e. it allows us to display values or messages on the screen during program execution.
+
+"a+b = &d \n": This is the format string that specifies the desired output format.
+In this case, it contains a combination of text and a format specifier %d.
+
+%d: This is a format specifier used to indicate that an integer value will be printed at 
+that postion in the format string.
+
+\n: This is an escape sequence that represents a newline charcter, which moves the cursor to the next line after printing the output.
+
+The format string "a+bb = %d \n" contains the text "a+b =" followed by the format specifier %d.
+The %d is a placeholder that will be replaced by the value of the variable c when the printf 
+function is executed.
+
+Assuming that the variable c holds the sum of two numbers a and b, the printf function will print
+the result of the addition in the specified format. For example, if a 9, b is 4, and c is the sum of a and b, the output will be: a+b = 13
+
+PS: The %d format specifier is used specifically for integers. If you want to print other types of values, such as floating-point numbers or characters, you would use a different format specifiers
+like %f or %c, respectively.
