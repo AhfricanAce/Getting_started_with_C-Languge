@@ -1,0 +1,3 @@
+There are two basic conversion functions.
+These are named using the prefix 'to'. These functions take the same argument as those above.
+However the return value is not a simple zero or non-zero but the passed argument changed in some manner.
