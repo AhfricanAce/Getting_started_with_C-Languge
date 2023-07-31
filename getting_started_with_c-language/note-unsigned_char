@@ -1,0 +1,32 @@
+An unsigned char is a data type in C language used to store small integers.
+An unsigned char can only hold positive values or zero. The "unsigned" keyword
+keyword indicates that the char can only store non-negative values.
+
+Unsigned char is particularly useful when dealing with raw data, such as reading and 
+writing files or working with network protocols.
+
+Example of how an unsigned char can e declared and used in C:
+
+unsigned char mychar ='A';
+printf("The value of mychar is %c\n" my char);
+
+In this example, we declare an unsigned char variable named mychar and assign it the 
+value 'A'. The %c format specifier is used to print the character value of mychar using 
+the printf function.
+
+Range of values for unsigned char are 0 - 255, they use all 8 bits to represent positive 
+values. This means that an unsigned char can store values from 0 to 255 inclusive.
+
+PS: When performing arithmetic operations on unsigned chars, the result will wrap around 
+if it exceeds the maximum value. 
+Example: When you add 1 to an unsigned char value of 255, the result will be 0.
+
+Example:
+unsigned char mychar = 255;
+mychar = mychar + 1;
+printf("The value of mychar after incrementing is %d\n", mychar);
+
+Here, we have the value of my char incremented by 1, resulting in a value of 0.
+This ehaviour is known as "wraparound" or "overflow" and is a characteristics of unsigned integer types in C.
+
+In summary, an unsigned char is a data type in C that can store positive values or zero. Commonly used when working with binary data or when negative values are not needed. When performing arithmetic operations, the value will wrap around if it exceeds the maximum value.
