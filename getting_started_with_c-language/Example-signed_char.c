@@ -15,3 +15,8 @@ int main()
 values 10 and -5 respectively.*/
 /*We then perform addition using the + operator and store the result in the sum variable.*/
 /*Finally, we print the result using the printf function.*/
+
+/*The signed char data type allows us to work with both positive and negative values within the range of -128 to 127.
+It is particularly useful when dealing with situations where negative values need to be represented, 
+such as in  mathematical calculations or when working with signed characters in strings*/
+/*In summary, the signed char data type provides a flexible and efficient way to handle signed values within the c language*/
