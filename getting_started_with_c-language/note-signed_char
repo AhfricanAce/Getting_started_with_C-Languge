@@ -1,0 +1,20 @@
+Char data types in C language is used to represent characters and small integers.
+By defualt, char is considered to be an unsigned data type, meaning it can only represent positive values or zero.
+However, in some cases, we may need to represent oth positive and negative values using the char data type.
+
+The signed char data ia s variation of the char data type that allows for the representaion of both posotive and negative values, extending the range of values that can e stored
+in a char variable by usung one it to represent the sign of the value.
+This means that a signed char can store values ranging from -128 to 127.
+
+Syntax for declaring a signed char variable in C:
+
+signed char mychar;
+
+You can  also initialize a signed char variable at the time of declaration:
+
+signed char mychar = -10;
+
+When working with a signed char variable, you can perform arithmetic operations such as addition, 
+subtraction, multiplication, and division, just like with any other numeric data type. The sign of the result will be determined based on the operands and the operation being performed.
+
+
