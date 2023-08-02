@@ -1,0 +1,8 @@
+In C, conversion functions are used to convert one data type to another. They allow us to change the representation of 
+data from one type to another, which can be useful in various programming scenarios.
+
+C provides several conversion functions that can be used to convert between different data types. 
+These functions are typically used when we need to perform operations on data of different types 
+or when we want to assign a value of one type to a variable of another type.
+
+See 8-advance-conversion_functions.c for examples and other explanations.

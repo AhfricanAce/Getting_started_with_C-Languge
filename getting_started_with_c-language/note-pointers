@@ -1,0 +1,6 @@
+A pointer is a type of variable which can store the address of another object or a function.
+They allow you to directly manipulate memory addresses, which can be extremely useful in many situations.
+In simple terms, a pointer is a variable that store the memory address of another variable.
+
+To declare a pointer in C, you use the asterisk (*) symbol before the variabble name.
+E.g.: int *ptr;

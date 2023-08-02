@@ -1,0 +1,31 @@
+In C programming, a variable is a named storage location that holds a value. It is used to 
+store and manipulate data durung program execution. Variables are an essential part of any programming language,
+as they allow us to store and retrive data as needed.
+
+In C, variables must be declared before they can be used. The declaration specifies the variable's name and its data type.
+The data type determines the kind of data that can be stored in the variable, such as integers, floating-point numbers, characters, or arrays.
+
+See example of declaring and using a variable in C:
+
+#include <stdio.h>
+
+int main() {
+	int age; // declaration of an integer variable named 'age'
+
+	age = 25; // assigning a value to the 'age' variable
+
+	printf("My age is %d\n", age); // printing the value of the 'age' variable
+
+	return 0;
+}
+
+In this example, we declare an integer variable named 'age' using the 'int' data type. 
+We then assign the value 25 to the 'age' variable using the assignment operator '='.
+
+However, variables in C can be modified by assigning new values to them. For example:
+
+age = 30; // asssigning a new value to the 'age' variable
+
+It is important to note that variables in C have a scope, which determines where they can be accessed.
+The scope os a variable can be global or local. Global variables are declared outside of any function and can be accessed
+by any function in the program. Local variables are declared within a function and can only be accessed within that function.
