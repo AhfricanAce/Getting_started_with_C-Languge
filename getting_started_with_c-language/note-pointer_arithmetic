@@ -1,0 +1,6 @@
+One important concept to understand when working with pointers is the concept of pointer arithmetic.
+Since pointers store memory addresses, you can perform arithmethic operations on them. 
+For example, you can increment or decrement a pointer,
+which will move it to the next or previous memory location, respectively.
+
+See 11-pointer_arithmetic for examples:

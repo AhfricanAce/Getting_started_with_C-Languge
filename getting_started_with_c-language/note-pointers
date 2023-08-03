@@ -4,3 +4,22 @@ In simple terms, a pointer is a variable that store the memory address of anothe
 
 To declare a pointer in C, you use the asterisk (*) symbol before the variabble name.
 E.g.: int *ptr;
+
+In this example, ptr is a pointer to an integer. It can store the memory address of an integer variable.
+
+To assign a value to a pointer, you use the address-of operator (&) followed by the variable name.
+For example:
+int num = 10;
+ptr = &num;
+
+In this example, ptr is assigned the memory address of the num variable using the address-of operator.
+
+TO access the value stored at the memory address pointed to by a pointer, you use the dereference
+operator (*) before the pointer name.
+For example:
+int value = *ptr;
+
+In this example, the value of num is assigned to the value variable by dereferencing the ptr pointer.
+
+Pointers are commonly used in C for various purposes, such as dynamic memory allocation, passing arguments
+to functions by reference, and working with arrays and strings.
