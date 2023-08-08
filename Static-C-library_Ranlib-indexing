@@ -1,0 +1,40 @@
+The concept of ranlib is closely related to the creation and management of static libraries in the C programming language.
+When we compile a C program, the compiler generates object files that contain the compiled code for 
+each individual source file.
+These object files can be combined into a static library, which is a collection of pre-compiled code that can be linked
+with other programs.
+
+Ranlib is a utility that iis used to create an index, also known as a symbol table, for a static library. 
+This index allows the linker to quickly locate and access the functions and variables defined in the library.
+Without an index, the linker would have to search through the entire library to find the required symbols, which can be time-consuming and inefficient.
+
+To create an index for a static library using ranlib, we use the following command:
+
+ranlib <library_name.a>
+
+Here, <libbrary_name.a> refers to the name of the static library file. Ranlib reads the object files contained 
+in the library and generates an index that maps the symbols to their respective locations within the library.
+
+The index created by ranlib is stored in a special section of the library file. This section is typically named .SYMDEF
+or .SYMDEF SORTED and contains information about the symbols defined in the library, such as thier names and addresses.
+
+Once the index is created, it can be used by the linker to quickly resolve symbols when linking programs with the 
+static library. This significantly improves the linking process, as the linker can directly
+access the required symbols without having to search through the entire library.
+
+In summary, ranlkib is a utility used to create an index for a static library in C programming. 
+This index allows the linker to efficiently locate and access the symbols defined in the library, improving the linking
+process.
+
+Note: when an archive file's index generation date (stored inside the archive file) is older than the file's last modification date (stored in the file system), a compiler trying to use this library will complain its index is out of date, and abort. There are two ways to overcome the problem:
+
+Use 'ranlib' to re-generate the index.
+When copying the archive file to another location, use 'cp -p', 
+instead of only 'cp'.
+The '-p' flag tells 'cp' to keep all attributes of the file,
+including its access permissions, owner (if "cp" is invoked by a superuser) and its last modification date.
+This will cause the compiler to think the index inside the file is still updated.
+This method is useful for makefiles that need to copy the library to another directory for some reason.
+
+# Using A "C" Library In A Program:
+see compiling_codes_with_external_libraries

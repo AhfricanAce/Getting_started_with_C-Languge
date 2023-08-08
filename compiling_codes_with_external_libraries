@@ -1,0 +1,33 @@
+#### Compiling a C code with external libraries is done by entering the following line of codes:
+For example:
+	cc main.o -L. -lahfrican -o prog
+
+The command cc main.o -L. -lahfrican -o prog is used to compile a C program that depends
+on an external library called "ahfrican". Let's break down the command and understand its components:
+
+	cc: This is the command to invoke the C compiler. It stands for "C Compiler" and is 
+	commonly used on Unix-like systems.
+
+	main.o: This is the object file that contains the compiled code for the main
+	function of the C program. The .o extension indicates that it is an object file.
+
+	-L.: This option tells the compiler to search for libraries in the current directory (.).
+	The -L flag is followed by the directory path.
+
+	-lahfrican: This option specifies the name of the library that the program depends on. 
+	The -l flag is followed by the library name without the lib prefix and the file extension. 
+	In this case, the library name is "ahfrican".
+
+	-o prog: This option specifies the output file name for the compiled program. The -o
+	flag is followed by the desired name for the executable file. In this case, the name is "prog".
+
+
+When you run this command, the C compiler (cc) will compile the main.o file and link it with 
+the ahfrican library. The resulting executable file will bbe named "prog".
+
+It's important to note that for this command to work correctly, the main.o file and the ahfrican library file should be 
+present in the current directory. If they are located in different directories,
+you may need to provide the appropriate paths.
+
+In summary, the command cc main.o -L -lahfrican -o prog is used to compile a C program that depends
+on the "ahfrican" library and produce an executable file named "prog".
