@@ -23,3 +23,4 @@ In this example, the value of num is assigned to the value variable by dereferen
 
 Pointers are commonly used in C for various purposes, such as dynamic memory allocation, passing arguments
 to functions by reference, and working with arrays and strings.
+

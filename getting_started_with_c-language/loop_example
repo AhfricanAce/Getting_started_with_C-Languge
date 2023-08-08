@@ -1,0 +1,4 @@
+The for loop is a control flow statement in the C programming language that allows you to repeadtedly execute a block of code based on a specifeid condition.
+It is commonly used when you know the number of iterations you want to perform.
+
+In the provided code snippet, the for loop

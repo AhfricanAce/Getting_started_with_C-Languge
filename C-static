@@ -1,0 +1,38 @@
+# Creating a Static Library In C Language.
+
+To create a static library in C language, you can use the ar command, which stands for "archiver"—
+The ar command is commonly used to create and manage static libraries in Unox-like systems.
+
+To create a static library named libahfrican.a from objecct files util_file.o, util_net.o, and 
+util_math.o, you can use the folllowing command:
+
+ar rc libahfrican.a util_file.o util_net.o util_math.o
+
+#### Let's Break Down The Command:
+
+ar: This is the command itself, used to create and manage static libraries.
+rc: These are options for the ar command:
+	r: This option tel ar to insert the object file into the library or replace existing files.
+	c: This option tells ar to create the library if it doesn't exist.
+
+libahfrican.a: This is the name of the static library you want to create. You can choose any name you like,
+but it's common to prefix it with "lib" and use the .a extension to indicate that it's a static library.
+
+util_file.o util_net.o, and util_math.o: These are the object files that you want to include in the library.
+Object files are compiled versions of your source code files (.c files) and contain  the machine code for the 
+functions and variables defined in those files.
+
+After running the ar command, you will have a static library named libahfrican.a that contains the object files util_file.o, util_net.o, and util_math.o. You can then use this library in your C programs by linking against it during the
+compilation process.
+
+To link against the libahfrican.a library, you can use the -l option followed by the library name when compiling your C 
+program. For example:
+
+gcc -o myprogram myprogram.c -L/path/to/library -lahfrican
+
+In the above command, -L/path/to/library specifies the directory where the libahfrican.a library is located,
+and -lahfrican tells the compiler to link against the libahfrican.a library.
+
+By creating a static library, you can easily reuse common code across multiple C programs without having to recompile
+the code evry time. This can help improve code organization, reduce duplication, and make your programs more modular
+and maintainable.
