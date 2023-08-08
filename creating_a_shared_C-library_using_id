@@ -1,0 +1,29 @@
+The creation of a shared library is rather similar to the creation of a static library.
+To compile multiple C files into a shared library, you can use the cc command with the -fpic flag.
+Here's and example:
+
+	cc -fpic -c ahfrican_file.c
+	cc -fpic -c ahfrican_net.c
+	cc -fpic -c ahfrican_math.c
+	cc -shared -o libahfrican.so ahfrican_file.o ahfrican_net.c ahfrican_math.o
+
+	Let's break down the command step by step:
+
+	1. cc -fpic -c ahfrican_file.c: This command compiles the ahfrican_file.c file into an object file (ahfrican_file.o) 
+	   using the -fpic flag. The -fpic flag stands for Position Independent Code, which is required for creating a 
+	   shared library.
+
+	2. cc -fpic -c ahfrican_net.c: This comand compiles the ahfrican_net.c file into an object file (ahfrican_net.o)
+	   using the -fpic flag.
+
+	3. cc -fpic -c ahfrican_math.c: This command compiles the ahfrican_math.c file into an object file (ahfrican_math.o)
+	   using the -fpic flag.
+
+	4. cc -shared -o libahfrican.so ahfrican_file.o ahfrican_net.o ahfrican_math.o: This command links the object files
+	   (ahfrican_file.o, ahfrican_net.o, and ahfrican_math.o) into a shared library (libahfrican.so) using the -shared
+	   flag. The -o flag specifies the output file name.
+
+After exceuting these commands, you should have a shared library named libahfrican.so that contains the compiled code from
+the ahfricsn_file.c, ahfrican_net.c, and ahfrican_math.c files.
+
+Remeber to adjust the commands according to your specific file names and requirements.
