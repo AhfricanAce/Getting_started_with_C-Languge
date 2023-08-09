@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+	printf("Number of arguments: %d\n", argc);
+
+	for (int i = 0; i < argc; i++) {
+	    printf("Arguments %d: %s\n", i, argv[i]);
+	}
+
+	return 0;
+}
+
+Explanation:
+In this example, the program prints the number of command-line arguments passed to it
+and then prints each argument on a separate line. The first argument (argv[0]) is always the name
+of the program itself.
+
+For example, if the program is compiled and executed with the command ./program arg1 arg2 arg3,
+the output would be:
+
+Number of arguments: 4
+Argument 0: ./program
+Argument 1: arg1
+Argument 2: arg2
+Argument 3: arg3
+
+command-line arguments can be useful for passing input data or configuration options to a program
+when it is executed. They provide a way to make a program more flexible and customizable without
+requiring changes to the source code.
+
+In conclusion, the concept of arguments to the main function in C allows programs to accept
+command-line arguments, which can be used to provide input data or configuration options
+when the program is executed. By using the argc and argv parameters, the program can acess and
+process the command-line arguments as needed.

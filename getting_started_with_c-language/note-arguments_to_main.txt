@@ -1,0 +1,23 @@
+In the C programming language, the main function is the entry point of a program. 
+it is where the program execution begins. The main function can accept command-line arguments,
+which are passed to it when the program is executed.
+
+The main function has two common forms:
+
+FORM 1:
+
+int main(void)
+
+FORM 2:
+
+int main(int argc, char *argv[])
+
+The first form, int main(void), indicates that the program does not accept any command-line arguments.
+This is the simplest form of the main function and is commonly used when the program does not require
+any input from the user.
+
+The second form, int main(int argc, char *argv[]), indicates that the program accepts command-
+line arguments. The argc parameter represents the number of command-line arguments passed to the 
+program, and the argv parameter is an array of strings that contains the actual arguments.
+
+For more examples, see arguments_to_main_example.txt
